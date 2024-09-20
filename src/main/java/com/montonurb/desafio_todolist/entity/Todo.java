@@ -14,39 +14,46 @@ public class Todo {
     private Long id;
     private String title;
     private String description;
-    private String check;
-    private Integer priority;
+    private boolean completed = false;
+    private int priority;
 
     public Long getId() {
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
+
     public String getTitle() {
         return title;
     }
+
     public void setTitle(String title) {
         this.title = title;
     }
+
     public String getDescription() {
         return description;
     }
+
     public void setDescription(String description) {
         this.description = description;
     }
-    public String getCheck() {
-        return check;
+
+    public boolean getCompleted() {
+        return completed;
     }
-    public void setCheck(String check) {
-        this.check = check;
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
     }
+
     public Integer getPriority() {
         return priority;
     }
+
     public void setPriority(Integer priority) {
         this.priority = priority;
     }
-
-    
 }
